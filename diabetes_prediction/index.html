@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction System</title>
+    <meta name="description" content="Machine Learning based Diabetes Prediction using Support Vector Machine on the Pima Indians Dataset">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-decoration">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+    </div>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header-icon">🩺</div>
+            <h1>Diabetes Prediction System</h1>
+            <p class="subtitle">Machine Learning Based Health Analysis</p>
+        </header>
+
+        <div class="card form-card">
+            <h2 class="card-title">Enter Patient Details</h2>
+
+            <form id="predictionForm">
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="pregnancies">Pregnancies</label>
+                        <input type="number" id="pregnancies" name="Pregnancies"
+                               placeholder="e.g. 3" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="glucose">Glucose</label>
+                        <input type="number" id="glucose" name="Glucose"
+                               placeholder="e.g. 120" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bloodpressure">Blood Pressure</label>
+                        <input type="number" id="bloodpressure" name="BloodPressure"
+                               placeholder="e.g. 70" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skinthickness">Skin Thickness</label>
+                        <input type="number" id="skinthickness" name="SkinThickness"
+                               placeholder="e.g. 20" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="insulin">Insulin</label>
+                        <input type="number" id="insulin" name="Insulin"
+                               placeholder="e.g. 80" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bmi">BMI</label>
+                        <input type="number" id="bmi" name="BMI"
+                               placeholder="e.g. 25.5" min="0" step="0.1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dpf">Diabetes Pedigree Function</label>
+                        <input type="number" id="dpf" name="DiabetesPedigreeFunction"
+                               placeholder="e.g. 0.5" min="0" step="0.001">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="Age"
+                               placeholder="e.g. 30" min="1" step="1">
+                    </div>
+
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="predictBtn" class="btn btn-predict">
+                        <span class="btn-text">🔍 Predict</span>
+                        <span class="btn-loader" style="display:none;">
+                            <span class="spinner"></span> Analyzing...
+                        </span>
+                    </button>
+                    <button type="button" id="resetBtn" class="btn btn-reset">
+                        🔄 Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="resultCard" class="card result-card" style="display:none;">
+            <div id="resultContent"></div>
+        </div>
+
+        <div class="info-row">
+            <div class="card info-card">
+                <div class="info-icon">⚙️</div>
+                <div class="info-label">Algorithm Used</div>
+                <div class="info-value">Support Vector Machine</div>
+            </div>
+            <div class="card info-card">
+                <div class="info-icon">📊</div>
+                <div class="info-label">Dataset</div>
+                <div class="info-value">Pima Indians Diabetes Dataset</div>
+            </div>
+            <div class="card info-card">
+                <div class="info-icon">🔢</div>
+                <div class="info-label">Features</div>
+                <div class="info-value">8</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Developed by <strong>Jeevan A Jacob</strong></p>
+            <p>B.Tech CSE &nbsp;·&nbsp; Amrita Vishwa Vidyapeetham</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
