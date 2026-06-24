@@ -2,6 +2,20 @@
 
 An interactive web-based dashboard that predicts the probability of a user having diabetes based on various clinical parameters. The application uses a machine learning model trained on the PIMA Diabetes dataset, exposes a Flask REST API, and features a responsive, user-friendly frontend.
 
+🔗 **Live Demo**: [Diabetes Predictor Website](https://jeevanjacob1.github.io/ACM_WORKS/diabetes_prediction/)
+
+## 📸 Screenshots
+
+Here are some screenshots of the application:
+
+<img width="800" alt="Dashboard Screenshot 1" src="https://github.com/user-attachments/assets/11587342-e7f1-427c-b10c-365845489d90" />
+<br/>
+<img width="800" alt="Dashboard Screenshot 2" src="https://github.com/user-attachments/assets/8a0d56c5-4ec7-4d49-89e3-4c10bff00b0a" />
+<br/>
+<img width="800" alt="Dashboard Screenshot 3" src="https://github.com/user-attachments/assets/d3d98b24-eb7e-4657-a5cd-bf3c5cf80d5b" />
+
+---
+
 ## 🚀 Key Features
 - **SVM Classifier**: Uses a Support Vector Machine classifier with a linear kernel.
 - **Flask REST API**: Handles backend predictions seamlessly, processing user inputs and outputting results in real-time.
